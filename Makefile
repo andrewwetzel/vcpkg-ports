@@ -45,7 +45,8 @@ test-onnxruntime: $(VCPKG_EXE)
 	@echo "--- [TEST] Building test project... ---"
 	@cmake --build $(BUILD_DIR)
 	
-	@echo "--- [TEST] Build complete! ---"
+	@echo "--- [TEST] Build complete! Running test... ---"
+	@$(BUILD_DIR)/onnxruntime-test
 
 # Target to clean up all test builds
 clean:
