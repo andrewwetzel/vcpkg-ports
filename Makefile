@@ -15,19 +15,25 @@ VCPKG_TOOLCHAIN := $(VCPKG_DIR)/scripts/buildsystems/vcpkg.cmake
 # Default target: running 'make' will run 'test-onnxruntime'
 all: test-onnxruntime
 
+# Define the vcpkg executable path
+VCPKG_EXE := $(VCPKG_DIR)/vcpkg
+
 # Target to automatically clone and bootstrap vcpkg
-# This is a dependency for the test target.
-$(VCPKG_DIR):
-	@if [ ! -d "$(VCPKG_DIR)" ]; then \
-		echo "--- Cloning vcpkg into $(VCPKG_DIR) ---"; \
-		git clone https://github.com/microsoft/vcpkg.git $(VCPKG_DIR); \
-		$(VCPKG_DIR)/bootstrap-vcpkg.sh; \
-	else \
-		echo "--- vcpkg already cloned ---"; \
-	fi
+# This now checks for the EXECUTABLE, not just the directory.
+$(VCPKG_EXE):
+	@echo "--- vcpkg executable not found, bootstrapping... ---"
+	@rm -rf $(VCPKG_DIR) # Remove any partial clone
+	@echo "--- Cloning vcpkg into $(VCPKG_DIR) ---"
+	@git clone https://github.com/microsoft/vcpkg.git $(VCPKG_DIR)
+	@$(VCPKG_DIR)/bootstrap-vcpkg.sh
+	@echo "--- vcpkg bootstrap complete ---"
 
 # Target to test the onnxruntime port
-test-onnxruntime: $(VCPKG_DIR)
+test-onnxruntime: $(VCPKG_EXE) # <-- NOTE: This dependency has changed
+	@echo "--- [TEST] Configuring test build for onnxruntime ---"
+
+# Target to test the onnxruntime port
+test-onnxruntime: $(VCPKG_EXE)
 	@echo "--- [TEST] Configuring test build for onnxruntime ---"
 	$(eval TEST_DIR := $(ROOT_DIR)/tests/test-onnxruntime)
 	$(eval BUILD_DIR := $(TEST_DIR)/build)
