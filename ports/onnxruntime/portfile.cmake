@@ -20,7 +20,7 @@ if("static-cpu" IN_LIST FEATURES)
         --parallel
         --skip_tests
         --skip_submodule_sync
-        --cmake_extra_defines "onnxruntime_USE_OPENMP=ON -DCMAKE_POSITION_INDEPENDENT_CODE=ON"
+        --cmake_extra_defines "onnxruntime_USE_OPENMP=ON -DCMAKE_POSITION_INDEPENDENT_CODE=ON -Donnxruntime_BUILD_FOR_CPP=ON"
     )
 else()
     message(FATAL_ERROR "This onnxruntime port currently only supports the 'static-cpu' feature.")
