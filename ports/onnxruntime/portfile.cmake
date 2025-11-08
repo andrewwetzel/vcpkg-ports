@@ -1,10 +1,9 @@
 # 1. Download the source code
 vcpkg_download_distfile(
     ARCHIVE
-    URLS "https://github.com/microsoft/onnxruntime/archive/refs/tags/v1.23.1.tar.gz"
-    FILENAME "onnxruntime-v1.23.1.tar.gz"
-    # NOTE: You need to replace this with the correct hash.
-    SHA512 fcb4b786a503a24868efe608c02f072b762537891d91ac4d8ec995fe726964c284d685dc68ffda28e86d03c03cac2e9f0de6a1e8d2efc1c44d2c01c15a4588ae
+    URLS "https://github.com/microsoft/onnxruntime/releases/download/v1.18.0/onnxruntime-source-1.18.0.tgz"
+    FILENAME "onnxruntime-source-1.18.0.tgz"
+    SHA512 a8f273087321591a272e293a5518f8045624775217730e82c16262453663a033190822606821370258665b1698b68a4270275815a0c32729930f3c5521b71191
 )
 
 # 2. Extract the downloaded archive.

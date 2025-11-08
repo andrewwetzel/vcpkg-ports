@@ -29,10 +29,6 @@ $(VCPKG_EXE):
 	@echo "--- vcpkg bootstrap complete ---"
 
 # Target to test the onnxruntime port
-test-onnxruntime: $(VCPKG_EXE) # <-- NOTE: This dependency has changed
-	@echo "--- [TEST] Configuring test build for onnxruntime ---"
-
-# Target to test the onnxruntime port
 test-onnxruntime: $(VCPKG_EXE)
 	@echo "--- [TEST] Configuring test build for onnxruntime ---"
 	$(eval TEST_DIR := $(ROOT_DIR)/tests/test-onnxruntime)
