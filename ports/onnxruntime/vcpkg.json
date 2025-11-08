@@ -1,0 +1,15 @@
+{
+    "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
+    "name": "onnxruntime",
+    "version-string": "1.19.2-static-cpu",
+    "description": "Custom CPU-only, static build of onnxruntime.",
+    "homepage": "https://github.com/microsoft/onnxruntime",
+    "license": "MIT",
+    "dependencies": [
+        "protobuf",
+        "abseil",
+        "flatbuffers",
+        "gtest",
+        "re2"
+    ]
+}

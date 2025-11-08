@@ -1,0 +1,18 @@
+{
+    "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg-configuration.schema.json",
+    "default-registry": {
+        "kind": "git",
+        "repository": "https://github.com/microsoft/vcpkg",
+        "baseline": "05d617d05775f0a6d05904537330cfd3d3e69f33"
+    },
+    "registries": [
+        {
+            "kind": "git",
+            "repository": "https://github.com/andrewwetzel/vcpkg-ports.git",
+            "baseline": "05d617d05775f0a6d05904537330cfd3d3e69f33",
+            "packages": [
+                "onnxruntime"
+            ]
+        }
+    ]
+}
