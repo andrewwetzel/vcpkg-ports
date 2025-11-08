@@ -55,3 +55,4 @@ test-onnxruntime: $(VCPKG_EXE)
 clean:
 	@echo "--- Cleaning test builds ---"
 	@rm -rf $(ROOT_DIR)/tests/test-onnxruntime/build
+	@rm -rf $(VCPKG_DIR)
