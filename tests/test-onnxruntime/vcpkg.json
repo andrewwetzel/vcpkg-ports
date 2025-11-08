@@ -3,6 +3,6 @@
     "name": "onnxruntime-test",
     "version-string": "1.0.0",
     "dependencies": [
-        "onnxruntime"
+        "onnxruntime[static-cpu]"
     ]
 }
