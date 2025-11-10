@@ -1,0 +1,92 @@
+--- [TEST] Configuring test build for onnxruntime ---
+# Clean and create the build directory
+--- [TEST] Running CMake... ---
+-- Running vcpkg install
+error: while checking out baseline from commit '05d617d05775f0a6d05904537330cfd3d3e69f33', failed to `git show` versions/baseline.json. This may be fixed by fetching commits with `git fetch`.
+error: git failed with exit code: (128).
+fatal: path 'versions/baseline.json' exists on disk, but not in '05d617d05775f0a6d05904537330cfd3d3e69f33'
+while checking out baseline 05d617d05775f0a6d05904537330cfd3d3e69f33
+while loading baseline version for abseil
+error: while checking out baseline from commit '05d617d05775f0a6d05904537330cfd3d3e69f33', failed to `git show` versions/baseline.json. This may be fixed by fetching commits with `git fetch`.
+error: git failed with exit code: (128).
+fatal: path 'versions/baseline.json' exists on disk, but not in '05d617d05775f0a6d05904537330cfd3d3e69f33'
+while checking out baseline 05d617d05775f0a6d05904537330cfd3d3e69f33
+while loading baseline version for boost-assert
+error: while checking out baseline from commit '05d617d05775f0a6d05904537330cfd3d3e69f33', failed to `git show` versions/baseline.json. This may be fixed by fetching commits with `git fetch`.
+error: git failed with exit code: (128).
+fatal: path 'versions/baseline.json' exists on disk, but not in '05d617d05775f0a6d05904537330cfd3d3e69f33'
+while checking out baseline 05d617d05775f0a6d05904537330cfd3d3e69f33
+while loading baseline version for boost-core
+error: while checking out baseline from commit '05d617d05775f0a6d05904537330cfd3d3e69f33', failed to `git show` versions/baseline.json. This may be fixed by fetching commits with `git fetch`.
+error: git failed with exit code: (128).
+fatal: path 'versions/baseline.json' exists on disk, but not in '05d617d05775f0a6d05904537330cfd3d3e69f33'
+while checking out baseline 05d617d05775f0a6d05904537330cfd3d3e69f33
+while loading baseline version for boost-mp11
+error: while checking out baseline from commit '05d617d05775f0a6d05904537330cfd3d3e69f33', failed to `git show` versions/baseline.json. This may be fixed by fetching commits with `git fetch`.
+error: git failed with exit code: (128).
+fatal: path 'versions/baseline.json' exists on disk, but not in '05d617d05775f0a6d05904537330cfd3d3e69f33'
+while checking out baseline 05d617d05775f0a6d05904537330cfd3d3e69f33
+while loading baseline version for cpuinfo
+error: while checking out baseline from commit '05d617d05775f0a6d05904537330cfd3d3e69f33', failed to `git show` versions/baseline.json. This may be fixed by fetching commits with `git fetch`.
+error: git failed with exit code: (128).
+fatal: path 'versions/baseline.json' exists on disk, but not in '05d617d05775f0a6d05904537330cfd3d3e69f33'
+while checking out baseline 05d617d05775f0a6d05904537330cfd3d3e69f33
+while loading baseline version for date
+error: while checking out baseline from commit '05d617d05775f0a6d05904537330cfd3d3e69f33', failed to `git show` versions/baseline.json. This may be fixed by fetching commits with `git fetch`.
+error: git failed with exit code: (128).
+fatal: path 'versions/baseline.json' exists on disk, but not in '05d617d05775f0a6d05904537330cfd3d3e69f33'
+while checking out baseline 05d617d05775f0a6d05904537330cfd3d3e69f33
+while loading baseline version for eigen3
+error: while checking out baseline from commit '05d617d05775f0a6d05904537330cfd3d3e69f33', failed to `git show` versions/baseline.json. This may be fixed by fetching commits with `git fetch`.
+error: git failed with exit code: (128).
+fatal: path 'versions/baseline.json' exists on disk, but not in '05d617d05775f0a6d05904537330cfd3d3e69f33'
+while checking out baseline 05d617d05775f0a6d05904537330cfd3d3e69f33
+while loading baseline version for flatbuffers
+error: while checking out baseline from commit '05d617d05775f0a6d05904537330cfd3d3e69f33', failed to `git show` versions/baseline.json. This may be fixed by fetching commits with `git fetch`.
+error: git failed with exit code: (128).
+fatal: path 'versions/baseline.json' exists on disk, but not in '05d617d05775f0a6d05904537330cfd3d3e69f33'
+while checking out baseline 05d617d05775f0a6d05904537330cfd3d3e69f33
+while loading baseline version for gtest
+error: while checking out baseline from commit '05d617d05775f0a6d05904537330cfd3d3e69f33', failed to `git show` versions/baseline.json. This may be fixed by fetching commits with `git fetch`.
+error: git failed with exit code: (128).
+fatal: path 'versions/baseline.json' exists on disk, but not in '05d617d05775f0a6d05904537330cfd3d3e69f33'
+while checking out baseline 05d617d05775f0a6d05904537330cfd3d3e69f33
+while loading baseline version for ms-gsl
+error: while checking out baseline from commit '05d617d05775f0a6d05904537330cfd3d3e69f33', failed to `git show` versions/baseline.json. This may be fixed by fetching commits with `git fetch`.
+error: git failed with exit code: (128).
+fatal: path 'versions/baseline.json' exists on disk, but not in '05d617d05775f0a6d05904537330cfd3d3e69f33'
+while checking out baseline 05d617d05775f0a6d05904537330cfd3d3e69f33
+while loading baseline version for nlohmann-json
+error: while checking out baseline from commit '05d617d05775f0a6d05904537330cfd3d3e69f33', failed to `git show` versions/baseline.json. This may be fixed by fetching commits with `git fetch`.
+error: git failed with exit code: (128).
+fatal: path 'versions/baseline.json' exists on disk, but not in '05d617d05775f0a6d05904537330cfd3d3e69f33'
+while checking out baseline 05d617d05775f0a6d05904537330cfd3d3e69f33
+while loading baseline version for onnx
+error: while checking out baseline from commit '05d617d05775f0a6d05904537330cfd3d3e69f33', failed to `git show` versions/baseline.json. This may be fixed by fetching commits with `git fetch`.
+error: git failed with exit code: (128).
+fatal: path 'versions/baseline.json' exists on disk, but not in '05d617d05775f0a6d05904537330cfd3d3e69f33'
+while checking out baseline 05d617d05775f0a6d05904537330cfd3d3e69f33
+while loading baseline version for protobuf
+error: while checking out baseline from commit '05d617d05775f0a6d05904537330cfd3d3e69f33', failed to `git show` versions/baseline.json. This may be fixed by fetching commits with `git fetch`.
+error: git failed with exit code: (128).
+fatal: path 'versions/baseline.json' exists on disk, but not in '05d617d05775f0a6d05904537330cfd3d3e69f33'
+while checking out baseline 05d617d05775f0a6d05904537330cfd3d3e69f33
+while loading baseline version for re2
+error: while checking out baseline from commit '05d617d05775f0a6d05904537330cfd3d3e69f33', failed to `git show` versions/baseline.json. This may be fixed by fetching commits with `git fetch`.
+error: git failed with exit code: (128).
+fatal: path 'versions/baseline.json' exists on disk, but not in '05d617d05775f0a6d05904537330cfd3d3e69f33'
+while checking out baseline 05d617d05775f0a6d05904537330cfd3d3e69f33
+while loading baseline version for safeint
+-- Running vcpkg install - failed
+CMake Error at /app/.vcpkg/scripts/buildsystems/vcpkg.cmake:949 (message):
+  vcpkg install failed.  See logs for more information:
+  /app/tests/test-onnxruntime/build/vcpkg-manifest-install.log
+Call Stack (most recent call first):
+  /usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:170 (include)
+  CMakeLists.txt:2 (project)
+
+
+CMake Error: CMake was unable to find a build program corresponding to "Ninja".  CMAKE_MAKE_PROGRAM is not set.  You probably need to select a different build tool.
+CMake Error: CMAKE_CXX_COMPILER not set, after EnableLanguage
+-- Configuring incomplete, errors occurred!
+make: *** [Makefile:45: test-onnxruntime] Error 1

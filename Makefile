@@ -22,10 +22,13 @@ VCPKG_EXE := $(VCPKG_DIR)/vcpkg
 # This now checks for the EXECUTABLE, not just the directory.
 $(VCPKG_EXE):
 	@echo "--- vcpkg executable not found, bootstrapping... ---"
-	@rm -rf $(VCPKG_DIR) # Remove any partial clone
-	@echo "--- Cloning vcpkg into $(VCPKG_DIR) ---"
-	@git clone https://github.com/microsoft/vcpkg.git $(VCPKG_DIR)
-	@$(VCPKG_DIR)/bootstrap-vcpkg.sh
+	@if [ ! -d "$(VCPKG_DIR)" ]; then \
+		echo "--- Cloning vcpkg into $(VCPKG_DIR) ---"; \
+		git clone https://github.com/microsoft/vcpkg.git $(VCPKG_DIR); \
+		$(VCPKG_DIR)/bootstrap-vcpkg.sh; \
+	else \
+		echo "--- vcpkg directory found, skipping clone. ---"; \
+	fi
 	@echo "--- vcpkg bootstrap complete ---"
 
 # Target to test the onnxruntime port
@@ -40,6 +43,7 @@ test-onnxruntime: $(VCPKG_EXE)
 	
 	@echo "--- [TEST] Running CMake... ---"
 	@cmake -S $(TEST_DIR) -B $(BUILD_DIR) \
+		-G Ninja \
 		-DCMAKE_TOOLCHAIN_FILE=$(VCPKG_TOOLCHAIN)
 		
 	@echo "--- [TEST] Building test project... ---"
@@ -52,4 +56,7 @@ test-onnxruntime: $(VCPKG_EXE)
 clean:
 	@echo "--- Cleaning test builds ---"
 	@rm -rf $(ROOT_DIR)/tests/test-onnxruntime/build
+
+distclean: clean
+	@echo "--- Cleaning vcpkg ---"
 	@rm -rf $(VCPKG_DIR)
